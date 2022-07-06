@@ -34,10 +34,10 @@ function dropMatch() {
     n0 = randint(72)
     n1 = randint(72)
     ctx.beginPath()
-    ctx.moveTo(x, y)
-    ctx.lineTo(x + n0, y + n1)
-    ctx.strokeStyle = '#ffbb00'
-    ctx.lineWidth = 3
+    ctx.arc(x, y, 9, 0, Math.PI * 2, false)
+    ctx.fillStyle = '#ffffff'
+    ctx.fill();
+    ctx.closePath()
     ctx.stroke()
 }
 
